@@ -24,8 +24,8 @@ SOFTWARE.
 package v1
 
 import (
-	v1 "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	scheme "github.com/amadeusitgroup/redis-operator/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	scheme "github.com/bjosv/redis-operator/pkg/client/clientset/versioned/scheme"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

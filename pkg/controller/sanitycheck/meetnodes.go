@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/glog"
 
-	"github.com/amadeusitgroup/redis-operator/pkg/redis"
+	"github.com/bjosv/redis-operator/pkg/redis"
 )
 
 // FixNodesNotMeet Use to fix Redis nodes that didn't them.

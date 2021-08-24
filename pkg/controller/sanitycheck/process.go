@@ -5,10 +5,10 @@ import (
 
 	"github.com/golang/glog"
 
-	rapi "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	"github.com/amadeusitgroup/redis-operator/pkg/config"
-	"github.com/amadeusitgroup/redis-operator/pkg/controller/pod"
-	"github.com/amadeusitgroup/redis-operator/pkg/redis"
+	rapi "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	"github.com/bjosv/redis-operator/pkg/config"
+	"github.com/bjosv/redis-operator/pkg/controller/pod"
+	"github.com/bjosv/redis-operator/pkg/redis"
 )
 
 // RunSanityChecks function used to run all the sanity check on the current cluster

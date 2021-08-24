@@ -6,7 +6,7 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	redis "github.com/amadeusitgroup/redis-operator/pkg/api/redis"
+	redis "github.com/bjosv/redis-operator/pkg/api/redis"
 )
 
 // Install registers the API group and adds types to a scheme

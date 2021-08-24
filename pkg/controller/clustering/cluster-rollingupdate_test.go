@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/amadeusitgroup/redis-operator/pkg/redis"
+	"github.com/bjosv/redis-operator/pkg/redis"
 )
 
 func TestReplaceMasters(t *testing.T) {

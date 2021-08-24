@@ -8,8 +8,8 @@ import (
 	kapi "k8s.io/api/core/v1"
 	kmetav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	rapi "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	ctrlpod "github.com/amadeusitgroup/redis-operator/pkg/controller/pod"
+	rapi "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	ctrlpod "github.com/bjosv/redis-operator/pkg/controller/pod"
 )
 
 func Test_checkReplicationFactor(t *testing.T) {

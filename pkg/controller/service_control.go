@@ -8,8 +8,8 @@ import (
 	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/record"
 
-	rapi "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	"github.com/amadeusitgroup/redis-operator/pkg/controller/pod"
+	rapi "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	"github.com/bjosv/redis-operator/pkg/controller/pod"
 )
 
 // ServicesControlInterface inferface for the ServicesControl

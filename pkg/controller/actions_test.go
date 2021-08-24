@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	rapi "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	"github.com/amadeusitgroup/redis-operator/pkg/redis"
-	"github.com/amadeusitgroup/redis-operator/pkg/redis/fake/admin"
+	rapi "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	"github.com/bjosv/redis-operator/pkg/redis"
+	"github.com/bjosv/redis-operator/pkg/redis/fake/admin"
 	kapiv1 "k8s.io/api/core/v1"
 	kmetav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

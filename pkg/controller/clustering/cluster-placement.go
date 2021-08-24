@@ -3,7 +3,7 @@ package clustering
 import (
 	"fmt"
 
-	"github.com/amadeusitgroup/redis-operator/pkg/redis"
+	"github.com/bjosv/redis-operator/pkg/redis"
 	"github.com/golang/glog"
 )
 

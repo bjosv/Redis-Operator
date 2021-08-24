@@ -28,7 +28,7 @@ package externalversions
 
 import (
 	"fmt"
-	v1 "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
+	v1 "github.com/bjosv/redis-operator/pkg/api/redis/v1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )

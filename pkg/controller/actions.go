@@ -8,11 +8,11 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/errors"
 
-	rapi "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	"github.com/amadeusitgroup/redis-operator/pkg/controller/clustering"
-	podctrl "github.com/amadeusitgroup/redis-operator/pkg/controller/pod"
-	"github.com/amadeusitgroup/redis-operator/pkg/controller/sanitycheck"
-	"github.com/amadeusitgroup/redis-operator/pkg/redis"
+	rapi "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	"github.com/bjosv/redis-operator/pkg/controller/clustering"
+	podctrl "github.com/bjosv/redis-operator/pkg/controller/pod"
+	"github.com/bjosv/redis-operator/pkg/controller/sanitycheck"
+	"github.com/bjosv/redis-operator/pkg/redis"
 )
 
 func (c *Controller) clusterAction(admin redis.AdminInterface, cluster *rapi.RedisCluster, infos *redis.ClusterInfos) (bool, error) {

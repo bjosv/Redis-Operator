@@ -8,9 +8,9 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"
 
-	"github.com/amadeusitgroup/redis-operator/pkg/redisnode"
-	"github.com/amadeusitgroup/redis-operator/pkg/signal"
-	"github.com/amadeusitgroup/redis-operator/pkg/utils"
+	"github.com/bjosv/redis-operator/pkg/redisnode"
+	"github.com/bjosv/redis-operator/pkg/signal"
+	"github.com/bjosv/redis-operator/pkg/utils"
 )
 
 func main() {

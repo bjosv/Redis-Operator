@@ -18,10 +18,10 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/clientcmd"
 
-	rclient "github.com/amadeusitgroup/redis-operator/pkg/client"
-	redisinformers "github.com/amadeusitgroup/redis-operator/pkg/client/informers/externalversions"
-	"github.com/amadeusitgroup/redis-operator/pkg/controller"
-	"github.com/amadeusitgroup/redis-operator/pkg/garbagecollector"
+	rclient "github.com/bjosv/redis-operator/pkg/client"
+	redisinformers "github.com/bjosv/redis-operator/pkg/client/informers/externalversions"
+	"github.com/bjosv/redis-operator/pkg/controller"
+	"github.com/bjosv/redis-operator/pkg/garbagecollector"
 )
 
 // RedisOperator constains all info to run the redis operator.

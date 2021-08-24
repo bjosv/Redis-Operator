@@ -14,10 +14,10 @@ import (
 	kclientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 
-	rapi "github.com/amadeusitgroup/redis-operator/pkg/api/redis/v1"
-	rclientset "github.com/amadeusitgroup/redis-operator/pkg/client/clientset/versioned"
-	rinformers "github.com/amadeusitgroup/redis-operator/pkg/client/informers/externalversions"
-	rlisters "github.com/amadeusitgroup/redis-operator/pkg/client/listers/redis/v1"
+	rapi "github.com/bjosv/redis-operator/pkg/api/redis/v1"
+	rclientset "github.com/bjosv/redis-operator/pkg/client/clientset/versioned"
+	rinformers "github.com/bjosv/redis-operator/pkg/client/informers/externalversions"
+	rlisters "github.com/bjosv/redis-operator/pkg/client/listers/redis/v1"
 )
 
 const (
