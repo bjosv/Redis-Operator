@@ -2,8 +2,9 @@ ARTIFACT_OPERATOR=redis-operator
 ARTIFACT_INITCONTAINER=init-container
 
 # 0.0 shouldn't clobber any released builds
-PREFIX=redisoperator/
+#PREFIX=redisoperator/
 #PREFIX = gcr.io/google_containers/
+PREFIX = bjosv/
 
 SOURCES := $(shell find $(SOURCEDIR) ! -name "*_test.go" -name '*.go')
 
@@ -24,10 +25,10 @@ install-plugin:
 	./tools/install-plugin.sh
 
 build-%:
-	CGO_ENABLED=0 go build -i -installsuffix cgo ${LDFLAGS} -o bin/$* ./cmd/$*
+	go build ${LDFLAGS} -o bin/$* ./cmd/$*
 
 buildlinux-%: ${SOURCES}
-	CGO_ENABLED=0 GOOS=linux go build -i -installsuffix cgo ${LDFLAGS} -o docker/$*/$* ./cmd/$*/main.go
+	CGO_ENABLED=0 GOOS=linux go build ${LDFLAGS} -o docker/$*/$* ./cmd/$*/main.go
 
 container-%: buildlinux-%
 	@cd docker/$* && docker build -t $(PREFIX)$*:$(TAG) .
