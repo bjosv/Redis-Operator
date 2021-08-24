@@ -13,6 +13,10 @@ CMDBINS := operator redisnode
 TAG?=$(shell git tag|tail -1)
 COMMIT=$(shell git rev-parse HEAD)
 VERSION?=$(shell cat version.txt)
+
+TAG=6.2-1
+VERSION=6.2-1
+
 DATE=$(shell date +%Y-%m-%d/%H:%M:%S )
 BUILDINFOPKG=github.com/bjosv/redis-operator/pkg/utils
 LDFLAGS= -ldflags "-w -X ${BUILDINFOPKG}.TAG=${TAG} -X ${BUILDINFOPKG}.COMMIT=${COMMIT} -X ${BUILDINFOPKG}.VERSION=${VERSION} -X ${BUILDINFOPKG}.BUILDTIME=${DATE} -s"
